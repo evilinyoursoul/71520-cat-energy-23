@@ -30,6 +30,100 @@
       </nav>
     </header>
     <main class="page-main">
+      <h1 class="main-title">Подбор программы</h1>
+      <section class="program-selection">
+        <h2 class="page__hidden">Форма для подбора программы</h2>
+        <p class="program-selection__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <form class="form program-selection__form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset>
+            <legend class="page__hidden">
+              Данные кота
+            </legend>
+            <p>
+              <label for="cat-name-id">Имя:<sup>*</sup></label>
+              <input type="text" name="cat-name" id="cat-name-id" placeholder="Барсик" required>
+            </p>
+            <p>
+              <label for="weight-id">Вес (кг):<sup>*</sup></label>
+              <input type="number" name="weight" id="weight-id" placeholder="7" required>
+            </p>
+            <p>
+              <label for="age-id">Возраст (лет):</label>
+              <input type="number" name="age" id="age-id" placeholder="7">
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend class="page__hidden">
+              Цель программы
+            </legend>
+            <ul>
+              <li>
+                <input type="radio" name="problem" id="weight-loss-id" value="weight-loss" checked>
+                <label for="weight-loss-id">Похудение</label>
+              </li>
+              <li>
+                <input type="radio" name="problem" id="weight-gain-id" value="weight-gain">
+                <label for="weight-gain-id">Набор массы</label>
+              </li>
+              <li>
+                <input type="radio" name="problem" id="dont-know-id" value="dont-know">
+                <label for="dont-know-id">Не знаю (нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>
+              Контактные данные (владелец кота)
+            </legend>
+            <p>
+              <label for="email-id">E-mail:<sup>*</sup></label>
+              <input type="email" name="email" id="email-id" placeholder="kuklachev@gmail.com" required>
+            </p>
+            <p>
+              <label for="phone-id">Телефон:<sup>*</sup></label>
+              <input type="tel" name="phone" id="phone-id" placeholder="8 (960) 900-60-90" required>
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>
+              Комметарий
+            </legend>
+            <textarea name="comment" id="comment-id" placeholder="Расскажите обо всех повадках кота">
+            </textarea>
+          </fieldset>
+          <fieldset>
+            <legend>
+              Дополнительно
+            </legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="add" id="sweetener-id" value="sweetener" checked>
+                <label for="sweetener-id">Сахарозаменитель</label>
+              </li>
+              <li>
+                <input type="checkbox" name="add" id="water-id" value="water">
+                <label for="water-id">Питьевая вода</label>
+              </li>
+              <li>
+                <input type="checkbox" name="add" id="milk-id" value="milk">
+                <label for="milk-id">Молоко</label>
+              </li>
+              <li>
+                <input type="checkbox" name="add" id="vitamins-id" value="vitamins">
+                <label for="vitamins-id">Витамины</label>
+              </li>
+            </ul>
+          </fieldset>
+          <div class="form__bottom">
+            <button class="button form__submit" type="submit">
+              Отправить заявку
+            </button>
+            <p class="form__note" aria-hidden="true">
+              * — Обязательные поля
+            </p>
+          </div>
+        </form>
+      </section>
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo-txt">
