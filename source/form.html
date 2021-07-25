@@ -35,82 +35,82 @@
         <h2 class="page__hidden">Форма для подбора программы</h2>
         <p class="program-selection__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <form class="form program-selection__form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset>
-            <legend class="page__hidden">
+          <fieldset class="form__fielset">
+            <legend class="page__hidden form__legend">
               Данные кота
             </legend>
             <p>
-              <label for="cat-name-id">Имя:<sup>*</sup></label>
-              <input type="text" name="cat-name" id="cat-name-id" placeholder="Барсик" required>
+              <label class="form__label" for="cat-name-id">Имя:<sup>*</sup></label>
+              <input class="form__input" type="text" name="cat-name" id="cat-name-id" placeholder="Барсик" required>
             </p>
             <p>
-              <label for="weight-id">Вес (кг):<sup>*</sup></label>
-              <input type="number" name="weight" id="weight-id" placeholder="7" required>
+              <label class="form__label" for="weight-id">Вес (кг):<sup>*</sup></label>
+              <input class="form__input type="number" name="weight" id="weight-id" placeholder="7" required>
             </p>
             <p>
-              <label for="age-id">Возраст (лет):</label>
-              <input type="number" name="age" id="age-id" placeholder="7">
+              <label class="form__label" for="age-id">Возраст (лет):</label>
+              <input class="form__input type="number" name="age" id="age-id" placeholder="7">
             </p>
           </fieldset>
-          <fieldset>
-            <legend class="page__hidden">
+          <fieldset class="form__fielset">
+            <legend class="page__hidden form__legend">
               Цель программы
             </legend>
             <ul>
               <li>
-                <input type="radio" name="problem" id="weight-loss-id" value="weight-loss" checked>
-                <label for="weight-loss-id">Похудение</label>
+                <input class="form__input type="radio" name="problem" id="weight-loss-id" value="weight-loss" checked>
+                <label class="form__label" for="weight-loss-id">Похудение</label>
               </li>
               <li>
-                <input type="radio" name="problem" id="weight-gain-id" value="weight-gain">
-                <label for="weight-gain-id">Набор массы</label>
+                <input class="form__input type="radio" name="problem" id="weight-gain-id" value="weight-gain">
+                <label class="form__label" for="weight-gain-id">Набор массы</label>
               </li>
               <li>
-                <input type="radio" name="problem" id="dont-know-id" value="dont-know">
-                <label for="dont-know-id">Не знаю (нужен ваш совет)</label>
+                <input class="form__input type="radio" name="problem" id="dont-know-id" value="dont-know">
+                <label class="form__label" for="dont-know-id">Не знаю (нужен ваш совет)</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset>
-            <legend>
+          <fieldset class="form__fielset">
+            <legend class="form__legend">
               Контактные данные (владелец кота)
             </legend>
             <p>
-              <label for="email-id">E-mail:<sup>*</sup></label>
-              <input type="email" name="email" id="email-id" placeholder="kuklachev@gmail.com" required>
+              <label class="form__label" for="email-id">E-mail:<sup>*</sup></label>
+              <input class="form__input type="email" name="email" id="email-id" placeholder="kuklachev@gmail.com" required>
             </p>
             <p>
-              <label for="phone-id">Телефон:<sup>*</sup></label>
-              <input type="tel" name="phone" id="phone-id" placeholder="8 (960) 900-60-90" required>
+              <label class="form__label" for="phone-id">Телефон:<sup>*</sup></label>
+              <input class="form__input type="tel" name="phone" id="phone-id" placeholder="8 (960) 900-60-90" required>
             </p>
           </fieldset>
-          <fieldset>
-            <legend>
+          <fieldset class="form__fielset">
+            <legend class="form__legend">
               Комметарий
             </legend>
-            <textarea name="comment" id="comment-id" placeholder="Расскажите обо всех повадках кота">
+            <textarea class="form__textarea" name="comment" id="comment-id" placeholder="Расскажите обо всех повадках кота">
             </textarea>
           </fieldset>
-          <fieldset>
-            <legend>
+          <fieldset class="form__fielset">
+            <legend class="form__legend">
               Дополнительно
             </legend>
             <ul>
               <li>
-                <input type="checkbox" name="add" id="sweetener-id" value="sweetener" checked>
-                <label for="sweetener-id">Сахарозаменитель</label>
+                <input class="form__input type="checkbox" name="add" id="sweetener-id" value="sweetener" checked>
+                <label class="form__label" for="sweetener-id">Сахарозаменитель</label>
               </li>
               <li>
-                <input type="checkbox" name="add" id="water-id" value="water">
-                <label for="water-id">Питьевая вода</label>
+                <input class="form__input type="checkbox" name="add" id="water-id" value="water">
+                <label class="form__label" for="water-id">Питьевая вода</label>
               </li>
               <li>
-                <input type="checkbox" name="add" id="milk-id" value="milk">
-                <label for="milk-id">Молоко</label>
+                <input class="form__input type="checkbox" name="add" id="milk-id" value="milk">
+                <label class="form__label" for="milk-id">Молоко</label>
               </li>
               <li>
-                <input type="checkbox" name="add" id="vitamins-id" value="vitamins">
-                <label for="vitamins-id">Витамины</label>
+                <input class="form__input type="checkbox" name="add" id="vitamins-id" value="vitamins">
+                <label class="form__label" for="vitamins-id">Витамины</label>
               </li>
             </ul>
           </fieldset>
