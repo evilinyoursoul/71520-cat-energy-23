@@ -33,7 +33,7 @@
       <!-- Тут есть сомнения в нейминге -->
       <h1 class="main-title">Каталог продукции</h1>
       <table>
-        <thead>
+        <thead class="page__hidden">
           <tr>
             <td>
               Наименование
@@ -240,62 +240,80 @@
       <section class="additional">
         <h2 class="additional__main-title">Дополнительные товары</h2>
         <table class="additional__list">
-          <tr class="additional-card">
-            <th class="additional-card__title" scope="row">
-              <a class="link additional-card__link" href=#nowhere>Сахарозаменитель</a>
-            </th>
-            <td class="additional-card__description additional-card__description--quantity">
-              1 упаковка (100 г)
-            </td>
-            <td class="additional-card__description additional-card__description--price">
-              200 Р.
-            </td>
-            <td>
-              <a class="link button additional-card__button" href="#nowhere">Заказать</a>
-            </td>
-          </tr>
-          <tr class="additional-card">
-            <th class="additional-card__title" scope="row">
-              <a class="link additional-card__link" href=#nowhere>Питьевая вода</a>
-            </th>
-            <td class="additional-card__description additional-card__description--quantity">
-              5 литров
-            </td>
-            <td class="additional-card__description additional-card__description--price">
-              50 Р.
-            </td>
-            <td>
-              <a class="link button additional-card__button" href="#nowhere">Заказать</a>
-            </td>
-          </tr>
-          <tr class="additional-card">
-            <th class="additional-card__title" scope="row">
-              <a class="link additional-card__link" href=#nowhere>Молоко</a>
-            </th>
-            <td class="additional-card__description additional-card__description--quantity">
-              1 литр
-            </td>
-            <td class="additional-card__description additional-card__description--price">
-              100 Р.
-            </td>
-            <td>
-              <a class="link button additional-card__button" href="#nowhere">Заказать</a>
-            </td>
-          </tr>
-          <tr class="additional-card">
-            <th class="additional-card__title" scope="row">
-              <a class="link additional-card__link" href=#nowhere>Витамины</a>
-            </th>
-            <td class="additional-card__description additional-card__description--quantity">
-              1 упаковка (30 г)
-            </td>
-            <td class="additional-card__description additional-card__description--price">
-              300 Р.
-            </td>
-            <td>
-              <a class="link button additional-card__button" href="#nowhere">Заказать</a>
-            </td>
-          </tr>
+          <thead class="page__hidden">
+            <tr>
+              <td>
+                Наименование
+              </td>
+              <td>
+                Объём
+              </td>
+              <td>
+                Цена
+              </td>
+              <td>
+                Заказ
+              </td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="additional-card">
+              <th class="additional-card__title" scope="row">
+                <a class="link additional-card__link" href=#nowhere>Сахарозаменитель</a>
+              </th>
+              <td class="additional-card__description additional-card__description--quantity">
+                1 упаковка (100 г)
+              </td>
+              <td class="additional-card__description additional-card__description--price">
+                200 Р.
+              </td>
+              <td>
+                <a class="link button additional-card__button" href="#nowhere">Заказать</a>
+              </td>
+            </tr>
+            <tr class="additional-card">
+              <th class="additional-card__title" scope="row">
+                <a class="link additional-card__link" href=#nowhere>Питьевая вода</a>
+              </th>
+              <td class="additional-card__description additional-card__description--quantity">
+                5 литров
+              </td>
+              <td class="additional-card__description additional-card__description--price">
+                50 Р.
+              </td>
+              <td>
+                <a class="link button additional-card__button" href="#nowhere">Заказать</a>
+              </td>
+            </tr>
+            <tr class="additional-card">
+              <th class="additional-card__title" scope="row">
+                <a class="link additional-card__link" href=#nowhere>Молоко</a>
+              </th>
+              <td class="additional-card__description additional-card__description--quantity">
+                1 литр
+              </td>
+              <td class="additional-card__description additional-card__description--price">
+                100 Р.
+              </td>
+              <td>
+                <a class="link button additional-card__button" href="#nowhere">Заказать</a>
+              </td>
+            </tr>
+            <tr class="additional-card">
+              <th class="additional-card__title" scope="row">
+                <a class="link additional-card__link" href=#nowhere>Витамины</a>
+              </th>
+              <td class="additional-card__description additional-card__description--quantity">
+                1 упаковка (30 г)
+              </td>
+              <td class="additional-card__description additional-card__description--price">
+                300 Р.
+              </td>
+              <td>
+                <a class="link button additional-card__button" href="#nowhere">Заказать</a>
+              </td>
+            </tr>
+          </tbody>
         </table>
         <div class="special-offer additional__special-offer">
           <p class="special-offer__text">
