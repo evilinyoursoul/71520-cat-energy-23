@@ -1,8 +1,30 @@
 .promo {
-  background-color: var(--contrast-color);
+  text-align: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    background-color: var(--contrast-color-fade);
+    background-image:
+      linear-gradient(to top, var(--contrast-color-fade), var(--contrast-color-fade)),
+      url("../../img/index-background-cat.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    width: 100%;
+    height: 302px;
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+.promo__wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .promo__title {
+  padding-top: 27px;
   margin: 0;
 
   font-family: var(--accent-font);
@@ -13,6 +35,7 @@
 }
 
 .promo__description {
+  padding-top: 25px;
   margin: 0;
 
   font-family: var(--accent-font);
@@ -23,8 +46,13 @@
   text-transform: uppercase;
 }
 
+.promo__image-wrapper {
+  margin-top: 14px;
+}
+
 .promo__link {
   padding: 7px 44px;
+  margin: auto;
 
   font-family: var(--accent-font);
   font-size: 14px;
