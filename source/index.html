@@ -102,15 +102,20 @@
           </dl>
           <div class="example__slider slider">
             <ul class="slider__list">
-              <li class="slider__item">
-                <span>Было</span>
+              <li class="slider__item slider__item--before  slider__item--current">
                 <img src="img/before-mobile.png" alt="Толстый котик сидит на попе" width="311" height="232">
               </li>
-              <li class="slider__item">
-                <span>Стало</span>
+              <li class="slider__item slider__item--after">
                 <img src="img/after-mobile.png" alt="Тощий котик сидит" width="251" height="240">
               </li>
             </ul>
+            <div class="example__control slider__control">
+              <button class="slider__button slider__button--before" type="button">Было</button>
+              <div class="slider__scale">
+                <div class="slider__scale-toggle"></div>
+              </div>
+              <button class="slider__button slider__button--after" type="button">Стало</button>
+            </div>
           </div>
         </div>
       </section>
