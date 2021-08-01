@@ -1,10 +1,21 @@
+.offers {
+  padding-top: 22px;
+}
+
 .offers__list {
   padding: 0;
   margin: 0;
   list-style: none;
+
+  display: grid;
+  row-gap: 20px;
 }
 
 .offers__item {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 24px 20px 18px 20px;
   background-color: var(--blocks-background);
 }
 

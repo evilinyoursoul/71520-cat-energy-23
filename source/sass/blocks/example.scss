@@ -1,9 +1,13 @@
 .example {
+  margin-top: 42px;
+
+
   background-color: var(--example-background-mobile);
 }
 
 .example__title {
   margin: 0;
+  padding-top: 27px;
 
   font-family: var(--accent-font);
   font-size: 36px;
