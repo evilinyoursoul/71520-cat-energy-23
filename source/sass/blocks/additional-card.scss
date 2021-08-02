@@ -1,0 +1,33 @@
+.additional-card {
+  font-size: 14px;
+  line-height: 14px;
+  color: var(--special-text);
+}
+
+.additional-card__title {
+  font-size: 16px;
+  line-height: 16px;
+  font-family: var(--accent-font);
+  font-weight: 400;
+  color: var(--form-icon-mail);
+  text-transform: uppercase;
+}
+
+.additional-card__link {
+  color: inherit;
+}
+
+.additional-card__button {
+  padding: 7px 44px;
+  margin: auto;
+
+  font-family: var(--accent-font);
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: var(--basic-white);
+  background-color: var(--contrast-color);
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+}

@@ -1,0 +1,38 @@
+.product-card {
+  font-size: 12px;
+  line-height: 26px;
+  color: var(--special-text);
+}
+
+.product-card__title {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: var(--accent-font);
+  font-weight: 400;
+  color: var(--form-icon-mail);
+  text-transform: uppercase;
+}
+
+.product-card__link {
+  color: inherit;
+}
+
+.product-card__button {
+  padding: 7px 44px;
+  margin: auto;
+
+  font-family: var(--accent-font);
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: var(--basic-white);
+  background-color: var(--contrast-color);
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+
+  &--more {
+    color: var(--special-text);
+    background-color: var(--blocks-background);
+  }
+}
