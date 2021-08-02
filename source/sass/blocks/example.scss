@@ -1,5 +1,4 @@
 .example {
-  margin-top: 42px;
   padding-bottom: 39px;
 
   background-color: var(--example-background-mobile);
@@ -7,6 +6,7 @@
 
 .example__title {
   margin: 0;
+  margin-top: 42px;
   padding-top: 27px;
 
   font-family: var(--accent-font);
