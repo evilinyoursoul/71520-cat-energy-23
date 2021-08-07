@@ -9,6 +9,16 @@
 
   display: grid;
   row-gap: 20px;
+
+  @media (min-width: 768px) {
+    row-gap: 30px;
+  }
+
+  @media (min-width: 1300px) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+
+  }
 }
 
 .offers__item {
