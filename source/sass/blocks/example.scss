@@ -4,6 +4,18 @@
   background-color: var(--example-background-mobile);
 }
 
+.example__text-content {
+  display: grid;
+
+  @media (min-width: 768px) {
+    row-gap: 50px;
+  }
+
+  @media (min-width: 1300px) {
+    row-gap: 70px;
+  }
+}
+
 .example__title {
   margin: 0;
   margin-top: 42px;
@@ -13,12 +25,33 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
+
+  @media (min-width: 768px) {
+    padding-top: 43px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: 1300px) {
+    padding-top: 58px;
+  }
 }
 
 .example__text {
+  margin-top: 19px;
+
   font-size: 14px;
   line-height: 18px;
   color: var(--special-text);
+
+  @media (min-width: 768px) {
+    margin-top: 49px;
+  }
+
+  @media (min-width: 1300px) {
+    margin-top: 70px;
+  }
 }
 
 .example__list {
@@ -29,24 +62,51 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    column-gap: 42px;
+  }
+
+  @media (min-width: 1300px) {
+    max-width: 436px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 35px;
+  }
 }
 
 .example__item {
   padding: 15px;
-
   min-width: 124px;
   box-sizing: border-box;
   border: 1px solid var(--decoration-border);
   border-radius: 3px;
 
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column-reverse;
   gap: 9px;
   align-items: center;
 
   &--total {
+    flex-direction: row;
+    justify-content: center;
     width: 100%;
     border: none;
+
+    @media (min-width: 768px) {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    @media (min-width: 1300px) {
+      grid-column: 1/-1;
+      flex-direction: row;
+      align-items: center;
+    }
   }
 }
 
@@ -58,13 +118,24 @@
   text-transform: lowercase;
   text-align: center;
 
+  @media (min-width: 768px) {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
   &--total {
-    width: 100%;
+    width: auto;
 
     font-family: var(--accent-font);
     font-size: 14px;
     line-height: 20px;
+    color: var(--basic-black);
     text-transform: uppercase;
+
+    @media (min-width: 768px) {
+      font-size: 20px;
+      line-height: 20px;
+    }
   }
 }
 
@@ -76,10 +147,20 @@
   line-height: 24px;
   text-transform: uppercase;
 
+  @media (min-width: 768px) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
   &--total {
     font-family: var(--accent-font);
     font-size: 14px;
     line-height: 20px;
+
+    @media (min-width: 768px) {
+      font-size: 20px;
+      line-height: 20px;
+    }
   }
 }
 
