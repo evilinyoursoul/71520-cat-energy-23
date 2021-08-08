@@ -1,0 +1,25 @@
+.page-footer {
+  padding-top: 39px;
+  padding-bottom: 22px;
+  background-color: var(--blocks-background);
+
+  @media (min-width: 768px) {
+    padding-top: 55px;
+    padding-bottom: 61px;
+  }
+
+  @media (min-width: 1300px) {
+    padding-top: 57px;
+    padding-bottom: 58px;
+  }
+}
+
+.page-footer__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
