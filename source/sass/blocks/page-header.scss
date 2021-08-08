@@ -1,0 +1,33 @@
+.page-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 1300px) {
+    padding-top: 53px;
+  }
+}
+
+.page-header__wrapper {
+  grid-column: 1/-1;
+  grid-row: 1;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 66px 1fr;
+  align-items: center;
+}
+
+.page-header__logo-img {
+  justify-self: start;
+}
+
+.page-header__logo-txt {
+  justify-self: center;
+}
