@@ -1,0 +1,21 @@
+.catalog__table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.catalog__tbody {
+  display: grid;
+  row-gap: 25px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 141px;
+  }
+
+  @media (min-width: 1300px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
+    row-gap: 144px;
+  }
+}
