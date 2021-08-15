@@ -7,6 +7,14 @@
   }
 }
 
+.form__wrapper {
+  @media (min-width: 1300px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+}
+
 .form__fieldset {
   border: none;
 }
@@ -43,12 +51,14 @@
 
 .form__set {
   display: flex;
+  column-gap: 10px;
   align-items: center;
   white-space: nowrap;
 }
 
 .form__input {
   padding: 13px 15px 14px 13px;
+  width: 100%;
 
   &::placeholder {
     font-family: var(--accent-font);

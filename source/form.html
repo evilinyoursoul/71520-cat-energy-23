@@ -37,42 +37,44 @@
         <h2 class="page__hidden">Форма для подбора программы</h2>
         <p class="program-selection__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <form class="form program-selection__form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form__fieldset">
-            <legend class="page__hidden form__legend">
-              Данные кота
-            </legend>
-            <p class="form__set">
-              <label class="form__label" for="cat-name-id">Имя:<sup>*</sup></label>
-              <input class="form__input" type="text" name="cat-name" id="cat-name-id" placeholder="Барсик" required>
-            </p>
-            <p class="form__set">
-              <label class="form__label" for="weight-id">Вес (кг):<sup>*</sup></label>
-              <input class="form__input" type="number" name="weight" id="weight-id" placeholder="7" required>
-            </p>
-            <p class="form__set">
-              <label class="form__label" for="age-id">Возраст (лет):</label>
-              <input class="form__input" type="number" name="age" id="age-id" placeholder="7">
-            </p>
-          </fieldset>
-          <fieldset class="form__fieldset">
-            <legend class="page__hidden form__legend">
-              Цель программы
-            </legend>
-            <ul class="form__list">
-              <li>
-                <input class="form__input page__hidden" type="radio" name="problem" id="weight-loss-id" value="weight-loss" checked>
-                <label class="form__label" for="weight-loss-id">Похудение</label>
-              </li>
-              <li>
-                <input class="form__input page__hidden" type="radio" name="problem" id="weight-gain-id" value="weight-gain">
-                <label class="form__label" for="weight-gain-id">Набор массы</label>
-              </li>
-              <li>
-                <input class="form__input page__hidden" type="radio" name="problem" id="dont-know-id" value="dont-know">
-                <label class="form__label" for="dont-know-id">Не знаю (нужен ваш совет)</label>
-              </li>
-            </ul>
-          </fieldset>
+          <div class="form__wrapper">
+            <fieldset class="form__fieldset">
+              <legend class="page__hidden form__legend">
+                Данные кота
+              </legend>
+              <p class="form__set">
+                <label class="form__label" for="cat-name-id">Имя:<sup>*</sup></label>
+                <input class="form__input" type="text" name="cat-name" id="cat-name-id" placeholder="Барсик" required>
+              </p>
+              <p class="form__set">
+                <label class="form__label" for="weight-id">Вес (кг):<sup>*</sup></label>
+                <input class="form__input" type="number" name="weight" id="weight-id" placeholder="7" required>
+              </p>
+              <p class="form__set">
+                <label class="form__label" for="age-id">Возраст (лет):</label>
+                <input class="form__input" type="number" name="age" id="age-id" placeholder="7">
+              </p>
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <legend class="page__hidden form__legend">
+                Цель программы
+              </legend>
+              <ul class="form__list">
+                <li>
+                  <input class="form__input page__hidden" type="radio" name="problem" id="weight-loss-id" value="weight-loss" checked>
+                  <label class="form__label" for="weight-loss-id">Похудение</label>
+                </li>
+                <li>
+                  <input class="form__input page__hidden" type="radio" name="problem" id="weight-gain-id" value="weight-gain">
+                  <label class="form__label" for="weight-gain-id">Набор массы</label>
+                </li>
+                <li>
+                  <input class="form__input page__hidden" type="radio" name="problem" id="dont-know-id" value="dont-know">
+                  <label class="form__label" for="dont-know-id">Не знаю (нужен ваш совет)</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
           <fieldset class="form__fieldset">
             <legend class="form__legend">
               Контактные данные (владелец кота)
