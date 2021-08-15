@@ -74,6 +74,7 @@
 .form__input {
   padding: 13px 15px 14px 13px;
   width: 100%;
+  box-sizing: border-box;
 
   &::placeholder {
     font-family: var(--accent-font);
@@ -104,6 +105,7 @@
 .form__textarea {
   padding: 9px 12px 9px 15px;
   width: 100%;
+  box-sizing: border-box;
   height: 150px;
   margin-top: 37px;
 
