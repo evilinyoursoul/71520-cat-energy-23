@@ -96,24 +96,8 @@
 }
 
 .promo__link {
-  padding: 7px 44px;
-
-  font-family: var(--accent-font);
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-  color: var(--basic-white);
-  background-color: var(--contrast-color);
-  text-transform: uppercase;
-  text-align: center;
-  vertical-align: middle;
-
   @media (min-width: 768px) {
-    padding: 14px 26px;
     margin-left: 91px;
-
-    font-size: 20px;
-    line-height: 20px;
   }
 
   @media (min-width: 1300px) {
