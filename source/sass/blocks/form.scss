@@ -129,6 +129,29 @@
   }
 }
 
+.form__bottom {
+  text-align: center;
+  padding-top: 34px;
+  padding-bottom: 34px;
+
+  @media (min-width: 768px) {
+    padding-top: 0;
+    padding-bottom: 72px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 61px;
+    justify-items: start;
+    align-items: center;
+  }
+
+  @media (min-width: 1300px) {
+    column-gap: 80px;
+    justify-items: stretch;
+    padding-top: 5px;
+    padding-bottom: 82px;
+  }
+}
+
 .form__submit {
   padding: 7px 44px;
   margin: auto;
