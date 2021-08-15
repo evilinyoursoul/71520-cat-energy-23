@@ -2,13 +2,13 @@
   display: grid;
   row-gap: 22px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     row-gap: 75px;
   }
 }
 
 .form__wrapper {
-  @media (min-width: 1300px) {
+  @media (min-width: $desktop-width0px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
@@ -26,11 +26,11 @@
   &--owner {
     margin-top: 35px;
 
-    @media (min-width: 768px) {
+    @media (min-width: $tablet-width) {
       margin-top: 76px;
     }
 
-    @media (min-width: 1300px) {
+    @media (min-width: $desktop-width) {
       grid-template-columns: 1fr 1fr;
       column-gap: 80px;
     }
@@ -39,14 +39,14 @@
   &--checkbox {
     margin-top: 34px;
 
-    @media (min-width: 768px) {
+    @media (min-width: $tablet-width) {
       grid-template-columns: 1fr 1fr;
       column-gap: 60px;
       row-gap: 32px;
       margin-top: 55px;
     }
 
-    @media (min-width: 1300px) {
+    @media (min-width: $desktop-width) {
       grid-template-columns: 1fr 1fr 1fr 1fr;
       column-gap: 104px;
     }
@@ -58,7 +58,7 @@
   line-height: 26px;
   text-transform: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
   }
@@ -83,7 +83,7 @@
     text-transform: uppercase;
     color: var(--special-text);
 
-    @media (min-width: 768px) {
+    @media (min-width: $tablet-width) {
       font-size: 20px;
       line-height: 30px;
     }
@@ -96,7 +96,7 @@
   text-transform: uppercase;
   color: var(--special-text);
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
   }
@@ -109,7 +109,7 @@
   height: 150px;
   margin-top: 37px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     height: 174px;
     margin-top: 76px;
   }
@@ -121,7 +121,7 @@
     text-transform: uppercase;
     color: var(--special-text);
 
-    @media (min-width: 768px) {
+    @media (min-width: $tablet-width) {
       font-size: 20px;
       line-height: 30px;
     }
@@ -133,7 +133,7 @@
   padding-top: 34px;
   padding-bottom: 34px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     padding-top: 0;
     padding-bottom: 72px;
     display: grid;
@@ -143,7 +143,7 @@
     align-items: center;
   }
 
-  @media (min-width: 1300px) {
+  @media (min-width: $desktop-width) {
     column-gap: 80px;
     justify-items: stretch;
     padding-top: 5px;

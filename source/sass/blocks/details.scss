@@ -10,7 +10,7 @@
   line-height: 40px;
   font-weight: 400;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
   }
@@ -25,13 +25,13 @@
   display: grid;
   row-gap: 20px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
     column-gap: 137px;
     row-gap: 37px;
   }
 
-  @media (min-width: 1300px) {
+  @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 80px;
   }
@@ -42,7 +42,7 @@
   line-height: 18px;
   color: var(--special-text);
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
   }

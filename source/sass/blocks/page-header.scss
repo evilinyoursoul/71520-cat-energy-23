@@ -3,13 +3,13 @@
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     padding-top: 24px;
     display: flex;
     justify-content: space-between;
   }
 
-  @media (min-width: 1300px) {
+  @media (min-width: $desktop-width) {
     padding-top: 53px;
   }
 }
