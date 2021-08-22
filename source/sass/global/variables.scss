@@ -3,6 +3,7 @@
   --accent-font: "Oswald", "Arial", sans-serif;
 
   --basic-white: hsla(0, 0%, 100%, 1);
+  --basic-white-opacity-30: hsla(0, 0%, 100%, 0.3);
   --basic-black: hsla(0, 0%, 0%, 1);
   --almost-black: hsla(0, 0%, 7%, 1); /* logo & contacts big text */
   --special-text: hsla(0, 0%, 27%, 1);
@@ -18,5 +19,6 @@
 
   --contrast-color: hsla(97, 53%, 47%, 1);
   --contrast-color-fade: hsla(97, 53%, 47%, 0.85);
+  --contrast-color-active: hsla(97, 57%, 43%, 1);
   --icon: hsla(0, 0%, 40%, 1); /* social */
 }

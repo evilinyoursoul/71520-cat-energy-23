@@ -13,7 +13,17 @@
 
   border: none;
 
+  &:hover {
+    background-color: var(--contrast-color-active);
+  }
+
+  &:active {
+    color: var(--basic-white-opacity-30);
+    background-color: var(--contrast-color-active);
+  }
+
   @media (min-width: $tablet-width) {
+    padding: 14px 26px;
     font-size: 20px;
     line-height: 20px;
   }
