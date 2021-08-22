@@ -2,6 +2,7 @@
   font-size: 12px;
   line-height: 26px;
   color: var(--special-text);
+  padding-top: 11px;
 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -9,7 +10,17 @@
   align-items: end;
 
   @media (min-width: $tablet-width) {
+    padding: 0 37px 39px;
+    width: 324px;
     grid-template-columns: 1fr;
+    row-gap: 16px;
+
+    background-color: var(--blocks-background);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 30px 40px 35px;
+    width: 245px;
   }
 
   &--more {
@@ -55,17 +66,31 @@
 
 .product-card__description {
   text-align: right;
+  display: flex;
+  justify-content: space-between;
 
   &--weight {
     grid-area: 2 / 3 / 3 / 5;
+
+    &::before {
+      content: "Масса";
+    }
   }
 
   &--taste {
     grid-area: 3 / 3 / 4 / 5;
+
+    &::before {
+      content: "Вкус";
+    }
   }
 
   &--price {
     grid-area: 4 / 3 / 5 / 5;
+
+    &::before {
+      content: "Цена";
+    }
   }
 
   &--more {
