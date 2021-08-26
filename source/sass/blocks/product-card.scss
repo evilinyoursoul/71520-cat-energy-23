@@ -1,8 +1,9 @@
 .product-card {
   font-size: 12px;
-  line-height: 26px;
+  line-height: 16px;
   color: var(--special-text);
   padding-top: 11px;
+
 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -10,6 +11,8 @@
   align-items: end;
 
   @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
     padding: 0 37px 39px;
     width: 324px;
     grid-template-columns: 1fr;
@@ -118,7 +121,9 @@
 }
 
 .product-card__button {
-  margin: auto;
+  margin-top: 22px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   &--more {
     color: var(--special-text);
