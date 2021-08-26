@@ -1,5 +1,4 @@
 .special-offer {
-  text-align: center;
 
   background-color: var(--contrast-color);
   background-image: url("../../img/gift-photo-mobile.jpg");
@@ -10,8 +9,18 @@
 
 .special-offer__text {
   padding: 48px 61px 43px 58px;
+  width: 161px;
 
   font-size: 16px;
   line-height: 20px;
   color: var(--basic-white);
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
 }

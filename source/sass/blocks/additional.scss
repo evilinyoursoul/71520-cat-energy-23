@@ -13,6 +13,8 @@
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
+    padding-top: 68px;
+
     font-size: 36px;
     line-height: 36px;
   }
@@ -29,4 +31,8 @@
 .additional__table {
   border-collapse: collapse;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 60px;
+  }
 }
