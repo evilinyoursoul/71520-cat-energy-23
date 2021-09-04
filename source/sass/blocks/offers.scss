@@ -60,12 +60,7 @@
     height: 53px;
 
     @media (min-width: $tablet-width) {
-      content: "";
-      background: url("../../img/icons/cat_sit.svg") no-repeat;
-      background-size: contain;
-      display: block;
-      width: 200px;
-      height: 211px;
+      display: none;
     }
 
     @media (min-width: $desktop-width) {
@@ -87,12 +82,7 @@
     height: 50px;
 
     @media (min-width: $tablet-width) {
-      content: "";
-      background: url("../../img/icons/cat_walk.svg") no-repeat;
-      background-size: contain;
-      display: block;
-      width: 268px;
-      height: 200px;
+      display: none;
     }
 
     @media (min-width: $desktop-width) {
