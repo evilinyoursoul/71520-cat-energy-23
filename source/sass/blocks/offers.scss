@@ -128,10 +128,28 @@
   font-weight: 400;
   color: var(--special-text);
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     color: var(--basic-black);
+    gap: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 28px;
+  }
+
+
+  &::after {
+    content: "";
+    background: url("../../img/icons/icon_arrow-small.svg") no-repeat;
+    background-size: contain;
+    display: block;
+    width: 32px;
+    height: 10px;
   }
 }
