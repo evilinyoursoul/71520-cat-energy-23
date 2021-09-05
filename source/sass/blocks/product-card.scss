@@ -53,6 +53,27 @@
   &--more {
     grid-area: unset;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &::before {
+      content: "";
+      background: url("../../img/icons/plus.svg") no-repeat;
+      background-size: contain;
+      display: block;
+      width: 30px;
+      height: 30px;
+
+      @media (min-width: $tablet-width) {
+        content: "";
+        background: url("../../img/icons/plus.svg") no-repeat;
+        background-size: contain;
+        display: block;
+        width: 60px;
+        height: 60px;
+      }
+    }
   }
 }
 

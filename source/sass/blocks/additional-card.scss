@@ -56,6 +56,10 @@
       grid-row: 1;
       text-align: right;
     }
+
+    @media (min-width: $desktop-width) {
+      text-align: left;
+    }
   }
 
   &--price {
@@ -64,6 +68,11 @@
 
     @media (min-width: $tablet-width) {
       grid-row: 1;
+    }
+
+    @media (min-width: $desktop-width) {
+      text-align: left;
+      padding-right: 38px;
     }
   }
 }

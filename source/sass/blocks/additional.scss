@@ -25,14 +25,11 @@
     display: grid;
     grid-template-columns: 3fr 1fr;
     column-gap: 79px;
+    margin-top: 60px;
   }
 }
 
 .additional__table {
   border-collapse: collapse;
   width: 100%;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 60px;
-  }
 }
