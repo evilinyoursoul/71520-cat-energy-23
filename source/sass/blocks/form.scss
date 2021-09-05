@@ -17,6 +17,8 @@
 
 .form__fieldset {
   border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .form__list {
@@ -90,11 +92,69 @@
   }
 }
 
+.form__input--radio + label::before {
+    content: "";
+    background: url("../../img/icons/radio.svg") no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+
+    @media (min-width: $tablet-width) {
+      width: 40px;
+      height: 40px;
+    }
+}
+
+.form__input--radio:checked + label::before {
+  content: "";
+  background: url("../../img/icons/radio-checked.svg") no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.form__input--checkbox + label::before {
+  content: "";
+  background: url("../../img/icons/checkbox.svg") no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.form__input--checkbox:checked + label::before {
+content: "";
+background: url("../../img/icons/checkbox-checked.svg") no-repeat;
+background-size: contain;
+width: 30px;
+height: 30px;
+
+@media (min-width: $tablet-width) {
+  width: 40px;
+  height: 40px;
+}
+}
+
 .form__label {
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: var(--special-text);
+  display: grid;
+  grid-template-columns: min-content max-content;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  user-select: none;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

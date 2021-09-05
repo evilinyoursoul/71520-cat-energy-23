@@ -32,8 +32,10 @@
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="main-title">Подбор программы</h1>
-      <div class="program-selection">
+      <div class="page__leveler">
+        <h1 class="main-title">Подбор программы</h1>
+      </div>
+      <div class="program-selection page__leveler">
         <p class="program-selection__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <form class="form program-selection__form" action="https://echo.htmlacademy.ru" method="post">
           <div class="form__wrapper">
@@ -60,15 +62,15 @@
               </legend>
               <ul class="list form__list">
                 <li>
-                  <input class="form__input page__hidden" type="radio" name="problem" id="weight-loss-id" value="weight-loss" checked>
+                  <input class="form__input form__input--radio page__hidden" type="radio" name="problem" id="weight-loss-id" value="weight-loss" checked>
                   <label class="form__label" for="weight-loss-id">Похудение</label>
                 </li>
                 <li>
-                  <input class="form__input page__hidden" type="radio" name="problem" id="weight-gain-id" value="weight-gain">
+                  <input class="form__input form__input--radio page__hidden" type="radio" name="problem" id="weight-gain-id" value="weight-gain">
                   <label class="form__label" for="weight-gain-id">Набор массы</label>
                 </li>
                 <li>
-                  <input class="form__input page__hidden" type="radio" name="problem" id="dont-know-id" value="dont-know">
+                  <input class="form__input form__input--radio page__hidden" type="radio" name="problem" id="dont-know-id" value="dont-know">
                   <label class="form__label" for="dont-know-id">Не знаю (нужен ваш совет)</label>
                 </li>
               </ul>
@@ -99,19 +101,19 @@
             </legend>
             <ul class="list form__list form__list--checkbox">
               <li>
-                <input class="form__input page__hidden" type="checkbox" name="add" id="sweetener-id" value="sweetener" checked>
+                <input class="form__input form__input--checkbox page__hidden" type="checkbox" name="add" id="sweetener-id" value="sweetener" checked>
                 <label class="form__label" for="sweetener-id">Сахарозаменитель</label>
               </li>
               <li>
-                <input class="form__input page__hidden" type="checkbox" name="add" id="water-id" value="water">
+                <input class="form__input form__input--checkbox page__hidden" type="checkbox" name="add" id="water-id" value="water">
                 <label class="form__label" for="water-id">Питьевая вода</label>
               </li>
               <li>
-                <input class="form__input page__hidden" type="checkbox" name="add" id="milk-id" value="milk">
+                <input class="form__input form__input--checkbox page__hidden" type="checkbox" name="add" id="milk-id" value="milk">
                 <label class="form__label" for="milk-id">Молоко</label>
               </li>
               <li>
-                <input class="form__input page__hidden" type="checkbox" name="add" id="vitamins-id" value="vitamins">
+                <input class="form__input form__input--checkbox page__hidden" type="checkbox" name="add" id="vitamins-id" value="vitamins">
                 <label class="form__label" for="vitamins-id">Витамины</label>
               </li>
             </ul>
