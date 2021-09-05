@@ -93,16 +93,16 @@
 }
 
 .form__input--radio + label::before {
-    content: "";
-    background: url("../../img/icons/radio.svg") no-repeat;
-    background-size: contain;
-    width: 30px;
-    height: 30px;
+  content: "";
+  background: url("../../img/icons/radio.svg") no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
 
-    @media (min-width: $tablet-width) {
-      width: 40px;
-      height: 40px;
-    }
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .form__input--radio:checked + label::before {
@@ -132,16 +132,16 @@
 }
 
 .form__input--checkbox:checked + label::before {
-content: "";
-background: url("../../img/icons/checkbox-checked.svg") no-repeat;
-background-size: contain;
-width: 30px;
-height: 30px;
+  content: "";
+  background: url("../../img/icons/checkbox-checked.svg") no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
 
-@media (min-width: $tablet-width) {
-  width: 40px;
-  height: 40px;
-}
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .form__label {
@@ -212,6 +212,7 @@ height: 30px;
 }
 
 .form__submit {
+  width: 100%;
   margin: auto;
 }
 
